@@ -6,7 +6,7 @@
 
 ## :eyes: Preview
 
-<a href="https://rafaeldias.surge.sh/">
+<a href="https://rafaeldias-youtube.surge.sh/">
 <p align="center">
  <img alt="Demo"  height="400px" src="https://github.com/Rafsdias/youtube-UI-clone/blob/master/images/preview.png">
 </p>
