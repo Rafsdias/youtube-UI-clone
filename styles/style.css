@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: Roboto;
@@ -18,15 +15,22 @@ i {
 }
 
 .searchBar {
- display: flex;
- justify-content: space-between;
- padding: 0 16px;
- align-items: center;
- height: 56px;
- position: sticky;
- top: 0;
- background: #202020;
- font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 56px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #202020;
+  font-size: 10px;
 }
 
 .searchBar i {
@@ -34,12 +38,18 @@ i {
 }
 
 .searchBar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 8px;
 }
 
 .searchBar .logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 80px;
   margin-right: 25px;
@@ -52,11 +62,16 @@ i {
 
 .searchBar .search form {
   height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-.searchBar .search input,button {
+.searchBar .search input,
+.searchBar .search button {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -80,11 +95,8 @@ i {
 
 .searchBar .search input:focus {
   outline: none;
-  border: 1px solid #2962B8;
+  border: 1px solid #2962b8;
 }
-
-
-
 
 .searchBar .icons a {
   text-decoration: none;
@@ -95,24 +107,31 @@ i {
 }
 
 .searchBar .icons a .avatar {
-  height: 34px;
+  height: 32px;
   border-radius: 50%;
 }
 
 .mainBody {
   height: 106vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
 }
 
-.categories  {
+.categories {
   width: 270px;
   height: 100%;
   background: #202020;
 }
 
 .categories .categoriesSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   border-bottom: 1px solid #373737;
   padding: 12px 0;
@@ -120,7 +139,7 @@ i {
 }
 
 .categories .categoriesSection h3 {
-  padding: 8px 26px; 
+  padding: 8px 26px;
   color: #909090;
   font-size: 14px;
   font-weight: 500;
@@ -130,29 +149,23 @@ i {
 .categories .category {
   height: 40px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 24px;
   cursor: pointer;
 }
 
-.categories .category  span {
-  font-size: 14px;
-}
-
-
 .categories .category:hover {
   background: #373737;
 }
 
-.categories .active:first-child {
-  background: #383838;
+.categories .category span {
+  font-size: 14px;
 }
-
-.categories .active:first-child:hover {
-  background:#e5e5e5a8 ;
-}
-
 
 .categories .category i {
   margin-right: 25px;
@@ -162,6 +175,14 @@ i {
   height: 24px;
   width: 24px;
   border-radius: 50%;
+}
+
+.categories .active:first-child {
+  background: #383838;
+}
+
+.categories .active:first-child:hover {
+  background: #e5e5e5a8;
 }
 
 .videos {
@@ -174,10 +195,15 @@ i {
 }
 
 .videos .videosGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  color: #202020;  
+  color: #202020;
   margin-left: 80px;
   margin-top: 20px;
 }
@@ -188,8 +214,8 @@ i {
 }
 
 .videos .videosGrid .video:hover {
+  -webkit-transform: scale(1.01);
   transform: scale(1.01);
-
 }
 
 .videos .videosGrid .video .thumbnail {
@@ -197,33 +223,48 @@ i {
   height: 200px;
 }
 
-
 .videos .videosGrid .video .thumbnail img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
-.videos .videosGrid .video .author  {
+.videos .videosGrid .video .author {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 10px;
 }
+
 .videos .videosGrid .video .author img {
   height: 100%;
-  width: 100%; 
+  width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
+.videos .videosGrid .video .text span {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #aaaaaa;
+}
+
 .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 10px;
 }
 
 .details .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -231,7 +272,7 @@ i {
   margin-top: 0;
   font-weight: 500;
   font-size: 16px;
-  color: #F7FFFF;
+  color: #f7ffff;
   margin-bottom: 6px;
 }
 
@@ -241,16 +282,10 @@ i {
   font-size: 14px;
   margin-bottom: -3.4px;
   padding-bottom: -3.4px;
-  color: #AAAAAA;
+  color: #aaaaaa;
 }
 
 .details .text a:hover {
-  color:#FFFFFF
+  color: #ffffff;
 }
-
-.video .text span {
-  font-size: 14px;
-  margin-top: 5px;
-  color: #AAAAAA;
-}
-
+/*# sourceMappingURL=style.css.map */

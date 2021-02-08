@@ -1,0 +1,51 @@
+.videos {
+  background: #181818;
+  height: 100%;
+  width: 100%;
+  padding: 15px 25px;
+  overflow: hidden;
+  border-top: 1px solid #373737;
+  .videosGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #202020;
+    margin-left: 80px;
+    margin-top: 20px;
+    .video {
+      width: 25%;
+      margin-bottom: 40px;
+      &:hover {
+        transform: scale(1.01);
+      }
+      .thumbnail {
+        width: 360px;
+        height: 200px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .author {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .text {
+        span {
+          font-size: 14px;
+          margin-top: 5px;
+          color: #aaaaaa;
+        }
+      }
+    }
+  }
+}

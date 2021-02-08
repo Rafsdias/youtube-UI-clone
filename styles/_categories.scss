@@ -1,0 +1,47 @@
+.categories {
+  width: 270px;
+  height: 100%;
+  background: #202020;
+  .categoriesSection {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #373737;
+    padding: 12px 0;
+    color: white;
+    h3 {
+      padding: 8px 26px;
+      color: #909090;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.007px;
+    }
+  }
+  .category {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    cursor: pointer;
+    &:hover {
+      background: #373737;
+    }
+    span {
+      font-size: 14px;
+    }
+    i {
+      margin-right: 25px;
+      img {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .active:first-child {
+    background: #383838;
+    &:hover {
+      background: #e5e5e5a8;
+    }
+  }
+}
