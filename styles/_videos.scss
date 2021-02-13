@@ -1,6 +1,5 @@
 .videos {
   background: #181818;
-  height: 100%;
   width: 100%;
   padding: 15px 25px;
   overflow: hidden;
@@ -13,7 +12,7 @@
     margin-left: 80px;
     margin-top: 20px;
     .video {
-      width: 25%;
+      margin: 0 0.3rem;
       margin-bottom: 40px;
       &:hover {
         transform: scale(1.01);
@@ -34,18 +33,33 @@
         overflow: hidden;
         margin-right: 10px;
         img {
-          height: 100%;
           width: 100%;
           object-fit: cover;
         }
       }
       .text {
         span {
-          font-size: 14px;
+          font-size: 1.4rem;
           margin-top: 5px;
           color: #aaaaaa;
         }
       }
     }
+  }
+}
+
+/*@media (max-width: 1454px) {
+  .videosGrid {
+    justify-content: space-evenly;
+    background: green;
+  }
+}*/
+
+@media (max-width: 1075px) {
+  .videosGrid {
+    background: purple;
+    /* margin-left: 0;
+    justify-content: center;
+  */
   }
 }

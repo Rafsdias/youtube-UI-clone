@@ -11,7 +11,7 @@
     h3 {
       padding: 8px 26px;
       color: #909090;
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 500;
       letter-spacing: 0.007px;
     }
@@ -27,7 +27,7 @@
       background: #373737;
     }
     span {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
     i {
       margin-right: 25px;
@@ -42,6 +42,15 @@
     background: #383838;
     &:hover {
       background: #e5e5e5a8;
+    }
+  }
+}
+
+@media (max-width: 851px) {
+  .categories {
+    width: 70px;
+    span {
+      display: none;
     }
   }
 }
