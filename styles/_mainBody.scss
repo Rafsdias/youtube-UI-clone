@@ -1,5 +1,9 @@
 .mainBody {
-  height: 106vh;
+  min-height: 100vh;
   display: flex;
   overflow: hidden;
+
+  @media (max-width: 375px) {
+    flex-direction: column-reverse;
+  }
 }

@@ -1,7 +1,7 @@
 .categories {
   width: 270px;
-  height: 100%;
   background: #202020;
+
   .categoriesSection {
     display: flex;
     flex-direction: column;
@@ -48,9 +48,34 @@
 
 @media (max-width: 851px) {
   .categories {
-    width: 70px;
-    span {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+
+    .categoriesSection {
       display: none;
+
+      &.categoriesSectionMain {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+      }
+
+      .category {
+        width: auto;
+        flex: 1;
+        justify-content: center;
+
+        i {
+          margin: 0;
+        }
+      }
+
+      span > span {
+        display: none;
+      }
     }
   }
 }
