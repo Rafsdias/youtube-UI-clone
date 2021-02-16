@@ -107,3 +107,13 @@
     }
   }
 }
+
+@media (max-width: 391px) {
+  .icons a {
+    display: none;
+
+    &:last-child {
+      display: inline-flex;
+    }
+  }
+}
